@@ -5,5 +5,5 @@ There is a colloquial phenomena where one can compell somebody else to do someth
 
 *Made in 1 night for a hackathon :-)*
 
-![In App](screenshot1.png | width=100)
-![Siri](screenshot2.png | width=100)
+![In App](screenshot1.png)
+![Siri](screenshot2.png)
