@@ -12,7 +12,51 @@
 		94ED48262189206000D0759C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94ED48242189206000D0759C /* Main.storyboard */; };
 		94ED48282189206200D0759C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94ED48272189206200D0759C /* Assets.xcassets */; };
 		94ED482B2189206200D0759C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94ED48292189206200D0759C /* LaunchScreen.storyboard */; };
+		94ED48352189208900D0759C /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94ED48342189208900D0759C /* Intents.framework */; };
+		94ED48372189290300D0759C /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 94ED48362189290300D0759C /* Intents.intentdefinition */; };
+		94ED483F21892B1E00D0759C /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ED483E21892B1E00D0759C /* IntentHandler.swift */; };
+		94ED485421892B1E00D0759C /* RollDice.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 94ED483C21892B1E00D0759C /* RollDice.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		94ED485C21892BD800D0759C /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 94ED48362189290300D0759C /* Intents.intentdefinition */; };
+		94ED485F21892E2D00D0759C /* dice.png in Resources */ = {isa = PBXBuildFile; fileRef = 94ED485E21892E2C00D0759C /* dice.png */; };
+		94ED486021892E2D00D0759C /* dice.png in Resources */ = {isa = PBXBuildFile; fileRef = 94ED485E21892E2C00D0759C /* dice.png */; };
+		94ED487A21892E9B00D0759C /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94ED484621892B1E00D0759C /* IntentsUI.framework */; };
+		94ED487D21892E9B00D0759C /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ED487C21892E9B00D0759C /* IntentViewController.swift */; };
+		94ED488021892E9B00D0759C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94ED487E21892E9B00D0759C /* MainInterface.storyboard */; };
+		94ED488421892E9B00D0759C /* RollDiceUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 94ED487921892E9B00D0759C /* RollDiceUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		94ED488821892E9E00D0759C /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 94ED48362189290300D0759C /* Intents.intentdefinition */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94ED485221892B1E00D0759C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94ED48152189206000D0759C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94ED483B21892B1E00D0759C;
+			remoteInfo = RollDice;
+		};
+		94ED488221892E9B00D0759C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94ED48152189206000D0759C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94ED487821892E9B00D0759C;
+			remoteInfo = RollDiceUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		94ED485B21892B1E00D0759C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				94ED488421892E9B00D0759C /* RollDiceUI.appex in Embed App Extensions */,
+				94ED485421892B1E00D0759C /* RollDice.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		94ED481D2189206000D0759C /* SiriShortcut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiriShortcut.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +66,18 @@
 		94ED48272189206200D0759C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94ED482A2189206200D0759C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94ED482C2189206200D0759C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94ED48322189207300D0759C /* SiriShortcut.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SiriShortcut.entitlements; sourceTree = "<group>"; };
+		94ED48342189208900D0759C /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		94ED48362189290300D0759C /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		94ED483C21892B1E00D0759C /* RollDice.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RollDice.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		94ED483E21892B1E00D0759C /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		94ED484021892B1E00D0759C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94ED484621892B1E00D0759C /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		94ED485E21892E2C00D0759C /* dice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice.png; sourceTree = "<group>"; };
+		94ED487921892E9B00D0759C /* RollDiceUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RollDiceUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		94ED487C21892E9B00D0759C /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		94ED487F21892E9B00D0759C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		94ED488121892E9B00D0759C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +85,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94ED48352189208900D0759C /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94ED483921892B1E00D0759C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94ED487621892E9B00D0759C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94ED487A21892E9B00D0759C /* IntentsUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +110,12 @@
 		94ED48142189206000D0759C = {
 			isa = PBXGroup;
 			children = (
+				94ED48362189290300D0759C /* Intents.intentdefinition */,
 				94ED481F2189206000D0759C /* SiriShortcut */,
+				94ED483D21892B1E00D0759C /* RollDice */,
+				94ED487B21892E9B00D0759C /* RollDiceUI */,
 				94ED481E2189206000D0759C /* Products */,
+				94ED48332189208900D0759C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				94ED481D2189206000D0759C /* SiriShortcut.app */,
+				94ED483C21892B1E00D0759C /* RollDice.appex */,
+				94ED487921892E9B00D0759C /* RollDiceUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +132,44 @@
 		94ED481F2189206000D0759C /* SiriShortcut */ = {
 			isa = PBXGroup;
 			children = (
+				94ED48322189207300D0759C /* SiriShortcut.entitlements */,
 				94ED48202189206000D0759C /* AppDelegate.swift */,
 				94ED48222189206000D0759C /* ViewController.swift */,
 				94ED48242189206000D0759C /* Main.storyboard */,
 				94ED48272189206200D0759C /* Assets.xcassets */,
 				94ED48292189206200D0759C /* LaunchScreen.storyboard */,
+				94ED485E21892E2C00D0759C /* dice.png */,
 				94ED482C2189206200D0759C /* Info.plist */,
 			);
 			path = SiriShortcut;
+			sourceTree = "<group>";
+		};
+		94ED48332189208900D0759C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94ED48342189208900D0759C /* Intents.framework */,
+				94ED484621892B1E00D0759C /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94ED483D21892B1E00D0759C /* RollDice */ = {
+			isa = PBXGroup;
+			children = (
+				94ED483E21892B1E00D0759C /* IntentHandler.swift */,
+				94ED484021892B1E00D0759C /* Info.plist */,
+			);
+			path = RollDice;
+			sourceTree = "<group>";
+		};
+		94ED487B21892E9B00D0759C /* RollDiceUI */ = {
+			isa = PBXGroup;
+			children = (
+				94ED487C21892E9B00D0759C /* IntentViewController.swift */,
+				94ED487E21892E9B00D0759C /* MainInterface.storyboard */,
+				94ED488121892E9B00D0759C /* Info.plist */,
+			);
+			path = RollDiceUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +182,52 @@
 				94ED48192189206000D0759C /* Sources */,
 				94ED481A2189206000D0759C /* Frameworks */,
 				94ED481B2189206000D0759C /* Resources */,
+				94ED485B21892B1E00D0759C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				94ED485321892B1E00D0759C /* PBXTargetDependency */,
+				94ED488321892E9B00D0759C /* PBXTargetDependency */,
 			);
 			name = SiriShortcut;
 			productName = SiriShortcut;
 			productReference = 94ED481D2189206000D0759C /* SiriShortcut.app */;
 			productType = "com.apple.product-type.application";
+		};
+		94ED483B21892B1E00D0759C /* RollDice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94ED485821892B1E00D0759C /* Build configuration list for PBXNativeTarget "RollDice" */;
+			buildPhases = (
+				94ED483821892B1E00D0759C /* Sources */,
+				94ED483921892B1E00D0759C /* Frameworks */,
+				94ED483A21892B1E00D0759C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RollDice;
+			productName = RollDice;
+			productReference = 94ED483C21892B1E00D0759C /* RollDice.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		94ED487821892E9B00D0759C /* RollDiceUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94ED488521892E9B00D0759C /* Build configuration list for PBXNativeTarget "RollDiceUI" */;
+			buildPhases = (
+				94ED487521892E9B00D0759C /* Sources */,
+				94ED487621892E9B00D0759C /* Frameworks */,
+				94ED487721892E9B00D0759C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RollDiceUI;
+			productName = RollDiceUI;
+			productReference = 94ED487921892E9B00D0759C /* RollDiceUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +240,17 @@
 				ORGANIZATIONNAME = "rybel-llc";
 				TargetAttributes = {
 					94ED481C2189206000D0759C = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					94ED483B21892B1E00D0759C = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					94ED487821892E9B00D0759C = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
@@ -113,6 +269,8 @@
 			projectRoot = "";
 			targets = (
 				94ED481C2189206000D0759C /* SiriShortcut */,
+				94ED483B21892B1E00D0759C /* RollDice */,
+				94ED487821892E9B00D0759C /* RollDiceUI */,
 			);
 		};
 /* End PBXProject section */
@@ -122,9 +280,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94ED485F21892E2D00D0759C /* dice.png in Resources */,
 				94ED482B2189206200D0759C /* LaunchScreen.storyboard in Resources */,
 				94ED48282189206200D0759C /* Assets.xcassets in Resources */,
 				94ED48262189206000D0759C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94ED483A21892B1E00D0759C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94ED486021892E2D00D0759C /* dice.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94ED487721892E9B00D0759C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94ED488021892E9B00D0759C /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,12 +310,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94ED48372189290300D0759C /* Intents.intentdefinition in Sources */,
 				94ED48232189206000D0759C /* ViewController.swift in Sources */,
 				94ED48212189206000D0759C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		94ED483821892B1E00D0759C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94ED485C21892BD800D0759C /* Intents.intentdefinition in Sources */,
+				94ED483F21892B1E00D0759C /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94ED487521892E9B00D0759C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94ED488821892E9E00D0759C /* Intents.intentdefinition in Sources */,
+				94ED487D21892E9B00D0759C /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94ED485321892B1E00D0759C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94ED483B21892B1E00D0759C /* RollDice */;
+			targetProxy = 94ED485221892B1E00D0759C /* PBXContainerItemProxy */;
+		};
+		94ED488321892E9B00D0759C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94ED487821892E9B00D0759C /* RollDiceUI */;
+			targetProxy = 94ED488221892E9B00D0759C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		94ED48242189206000D0759C /* Main.storyboard */ = {
@@ -157,6 +364,14 @@
 				94ED482A2189206200D0759C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		94ED487E21892E9B00D0759C /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94ED487F21892E9B00D0759C /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -281,7 +496,9 @@
 		94ED48302189206200D0759C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiriShortcut/SiriShortcut.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AL6H9GEC6N;
 				INFOPLIST_FILE = SiriShortcut/Info.plist;
@@ -299,7 +516,9 @@
 		94ED48312189206200D0759C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiriShortcut/SiriShortcut.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AL6H9GEC6N;
 				INFOPLIST_FILE = SiriShortcut/Info.plist;
@@ -309,6 +528,82 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rybel-llc.SiriShortcut";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		94ED485921892B1E00D0759C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL6H9GEC6N;
+				INFOPLIST_FILE = RollDice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rybel-llc.SiriShortcut.RollDice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94ED485A21892B1E00D0759C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL6H9GEC6N;
+				INFOPLIST_FILE = RollDice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rybel-llc.SiriShortcut.RollDice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		94ED488621892E9B00D0759C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL6H9GEC6N;
+				INFOPLIST_FILE = RollDiceUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rybel-llc.SiriShortcut.RollDiceUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94ED488721892E9B00D0759C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL6H9GEC6N;
+				INFOPLIST_FILE = RollDiceUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rybel-llc.SiriShortcut.RollDiceUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -331,6 +626,24 @@
 			buildConfigurations = (
 				94ED48302189206200D0759C /* Debug */,
 				94ED48312189206200D0759C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94ED485821892B1E00D0759C /* Build configuration list for PBXNativeTarget "RollDice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94ED485921892B1E00D0759C /* Debug */,
+				94ED485A21892B1E00D0759C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94ED488521892E9B00D0759C /* Build configuration list for PBXNativeTarget "RollDiceUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94ED488621892E9B00D0759C /* Debug */,
+				94ED488721892E9B00D0759C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
